@@ -5,14 +5,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@GetMapping("/service1")
+@RequestMapping("/service1")
 public class Service1Controller {
 	
-	//@GetMapping("/get")
+	@GetMapping("/get")
 	public String test1() {
 		return "test1 method of service1";
 	}
-	//@GetMapping("/get")
+	@GetMapping("/get")
 	public String test2() {
 		return "test1 method of service1";
 	}
